@@ -4,7 +4,7 @@ def ierakstit(teksts):  #Funkcija, lai failā ierakstītu teksts
     fails.write('\n')
     fails.close()
 
-ierakstit("Man iet labi!")
+# ierakstit("Man iet labi!")
 
 def klat(teksts):
     fails = open("teksts.txt", "a", encoding="utf-8")
@@ -12,14 +12,14 @@ def klat(teksts):
     fails.write('\n')
     fails.close()
 
-klat("Man arī")
+# klat("Man arī")
 
 def nolasit():
     fails = open("teksts.txt", "r", encoding="utf-8")
     viss = fails.readlines()
     print(viss[0])
 
-nolasit()
+# nolasit()
 
 def uztaisit_vienu_spamu(vards, vecums, dz):
     if dz == "s":
@@ -30,7 +30,7 @@ def uztaisit_vienu_spamu(vards, vecums, dz):
     with open(f"spams/{vards}.txt", "w", encoding="utf-8") as f:
         f.write(teksts)
 
-uztaisit_vienu_spamu("Kate", 12, "s")
+# uztaisit_vienu_spamu("Kate", 12, "s")
 
 def viss_spams():
     with open("vardi.txt", "r", encoding="utf-8") as f:
@@ -40,7 +40,7 @@ def viss_spams():
             print (info[0])
             uztaisit_vienu_spamu(info[0], info[1], info[2])
 
-viss_spams()
+# viss_spams()
 
 def pievienot_datus(vards, vecums, dzimums):
     with open("vardi.txt", "a", encoding="utf-8") as f:
