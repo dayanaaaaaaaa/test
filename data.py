@@ -41,7 +41,6 @@ def viss_spams():
             info = viens.split()
             print (info[0])
             uztaisit_vienu_spamu(info[0], info[1], info[2])
-
 # viss_spams()
 
 def pievienot_datus(vards, vecums, dzimums):

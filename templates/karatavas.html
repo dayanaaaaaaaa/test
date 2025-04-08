@@ -4,24 +4,24 @@
 
 {%block saturs%}
 <h1>Sveiki! Uzspēlēsim?</h1>
-Slepenais vārds ir {{vards}}
+<div id="vards" style="display: none;">{{vards}}</div>
+Your lives: <span id= "dzivibas"></span>
 
 <hr>
-<div id="vardaVieta"></div>
+<h3><div id="vardaVieta"></div></h3>
 <hr>
 <button id="a" onclick="minetBurtu('a')">A</button>
 <button id="ā" onclick="minetBurtu('ā')">Ā</button>
 <button id="b" onclick="minetBurtu('b')">B</button>
 <button id="c" onclick="minetBurtu('c')">C</button>
+<button id="č" onclick="minetBurtu('č')">Č</button>
 <button id="d" onclick="minetBurtu('d')">D</button>
 <button id="e" onclick="minetBurtu('e')">E</button>
-<button id="ē" onclick="minetBurtu('ē')">Ē</button>
 <button id="f" onclick="minetBurtu('f')">F</button>
 <button id="g" onclick="minetBurtu('g')">G</button>
 <button id="ģ" onclick="minetBurtu('ģ')">Ģ</button>
 <button id="h" onclick="minetBurtu('h')">H</button>
 <button id="i" onclick="minetBurtu('i')">I</button>
-<button id="ī" onclick="minetBurtu('ī')">Ī</button>
 <button id="j" onclick="minetBurtu('j')">J</button>
 <button id="k" onclick="minetBurtu('k')">K</button>
 <button id="ķ" onclick="minetBurtu('ķ')">Ķ</button>
@@ -41,5 +41,7 @@ Slepenais vārds ir {{vards}}
 <button id="v" onclick="minetBurtu('v')">V</button>
 <button id="z" onclick="minetBurtu('z')">Z</button>
 <button id="ž" onclick="minetBurtu('ž')">Ž</button>
+
+<script> uzzimetVardu() </script>
 
 {% endblock %}

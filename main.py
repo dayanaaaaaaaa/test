@@ -21,7 +21,7 @@ def sveiki_cits(vards1, uzvards1):
 @app.route("/spams")
 def spams():
     dati = iegut_datus()
-    print(dati)
+    # print(dati)
     return render_template("spams.html", dati = dati)
 
 @app.route("/veidot_spamu", methods=["POST"])
